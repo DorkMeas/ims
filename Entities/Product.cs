@@ -2,7 +2,10 @@ using System;
 
 namespace Inventory.App.Entities
 {
+<<<<<<< HEAD
     // Class សម្រាប់ផ្ទុកទិន្នន័យ Product
+=======
+>>>>>>> 561f509 (feat: add stock)
     public class Product
     {
         public string ProductID { get; set; }

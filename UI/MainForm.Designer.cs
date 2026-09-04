@@ -17,6 +17,10 @@ namespace Inventory.App.UI
 
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+=======
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+>>>>>>> 561f509 (feat: add stock)
             this.panelSidebar = new System.Windows.Forms.Panel();
             this.btnSignOut = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
@@ -30,8 +34,13 @@ namespace Inventory.App.UI
             this.lblWelcome = new System.Windows.Forms.Label();
             this.picUser = new System.Windows.Forms.PictureBox();
             this.panelHeader = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+=======
+            this.btnClose = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+>>>>>>> 561f509 (feat: add stock)
             this.panelContent = new System.Windows.Forms.Panel();
             this.panelSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
@@ -55,7 +64,11 @@ namespace Inventory.App.UI
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 0);
             this.panelSidebar.Name = "panelSidebar";
+<<<<<<< HEAD
             this.panelSidebar.Size = new System.Drawing.Size(180, 650);
+=======
+            this.panelSidebar.Size = new System.Drawing.Size(154, 563);
+>>>>>>> 561f509 (feat: add stock)
             this.panelSidebar.TabIndex = 0;
             // 
             // btnSignOut
@@ -65,9 +78,15 @@ namespace Inventory.App.UI
             this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignOut.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnSignOut.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnSignOut.Location = new System.Drawing.Point(0, 580);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.Size = new System.Drawing.Size(180, 40);
+=======
+            this.btnSignOut.Location = new System.Drawing.Point(0, 503);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Size = new System.Drawing.Size(154, 35);
+>>>>>>> 561f509 (feat: add stock)
             this.btnSignOut.TabIndex = 10;
             this.btnSignOut.Text = "Sign Out";
             this.btnSignOut.UseVisualStyleBackColor = false;
@@ -80,9 +99,15 @@ namespace Inventory.App.UI
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnDashboard.Location = new System.Drawing.Point(0, 420);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(180, 40);
+=======
+            this.btnDashboard.Location = new System.Drawing.Point(0, 364);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(154, 35);
+>>>>>>> 561f509 (feat: add stock)
             this.btnDashboard.TabIndex = 9;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
@@ -95,9 +120,15 @@ namespace Inventory.App.UI
             this.btnStockIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStockIn.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnStockIn.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnStockIn.Location = new System.Drawing.Point(0, 380);
             this.btnStockIn.Name = "btnStockIn";
             this.btnStockIn.Size = new System.Drawing.Size(180, 40);
+=======
+            this.btnStockIn.Location = new System.Drawing.Point(0, 329);
+            this.btnStockIn.Name = "btnStockIn";
+            this.btnStockIn.Size = new System.Drawing.Size(154, 35);
+>>>>>>> 561f509 (feat: add stock)
             this.btnStockIn.TabIndex = 8;
             this.btnStockIn.Text = "Stock In";
             this.btnStockIn.UseVisualStyleBackColor = false;
@@ -110,9 +141,15 @@ namespace Inventory.App.UI
             this.btnStockOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStockOut.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnStockOut.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnStockOut.Location = new System.Drawing.Point(0, 340);
             this.btnStockOut.Name = "btnStockOut";
             this.btnStockOut.Size = new System.Drawing.Size(180, 40);
+=======
+            this.btnStockOut.Location = new System.Drawing.Point(0, 295);
+            this.btnStockOut.Name = "btnStockOut";
+            this.btnStockOut.Size = new System.Drawing.Size(154, 35);
+>>>>>>> 561f509 (feat: add stock)
             this.btnStockOut.TabIndex = 7;
             this.btnStockOut.Text = "Stock Out";
             this.btnStockOut.UseVisualStyleBackColor = false;
@@ -125,9 +162,15 @@ namespace Inventory.App.UI
             this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomers.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnCustomers.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnCustomers.Location = new System.Drawing.Point(0, 300);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(180, 40);
+=======
+            this.btnCustomers.Location = new System.Drawing.Point(0, 260);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(154, 35);
+>>>>>>> 561f509 (feat: add stock)
             this.btnCustomers.TabIndex = 6;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = false;
@@ -140,9 +183,15 @@ namespace Inventory.App.UI
             this.btnPurchases.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPurchases.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnPurchases.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnPurchases.Location = new System.Drawing.Point(0, 260);
             this.btnPurchases.Name = "btnPurchases";
             this.btnPurchases.Size = new System.Drawing.Size(180, 40);
+=======
+            this.btnPurchases.Location = new System.Drawing.Point(0, 225);
+            this.btnPurchases.Name = "btnPurchases";
+            this.btnPurchases.Size = new System.Drawing.Size(154, 35);
+>>>>>>> 561f509 (feat: add stock)
             this.btnPurchases.TabIndex = 5;
             this.btnPurchases.Text = "Purchases";
             this.btnPurchases.UseVisualStyleBackColor = false;
@@ -155,9 +204,15 @@ namespace Inventory.App.UI
             this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProducts.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnProducts.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnProducts.Location = new System.Drawing.Point(0, 220);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(180, 40);
+=======
+            this.btnProducts.Location = new System.Drawing.Point(0, 191);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(154, 35);
+>>>>>>> 561f509 (feat: add stock)
             this.btnProducts.TabIndex = 4;
             this.btnProducts.Text = "Products";
             this.btnProducts.UseVisualStyleBackColor = false;
@@ -170,9 +225,15 @@ namespace Inventory.App.UI
             this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnCategory.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnCategory.Location = new System.Drawing.Point(0, 180);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Size = new System.Drawing.Size(180, 40);
+=======
+            this.btnCategory.Location = new System.Drawing.Point(0, 156);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(154, 35);
+>>>>>>> 561f509 (feat: add stock)
             this.btnCategory.TabIndex = 3;
             this.btnCategory.Text = "Category";
             this.btnCategory.UseVisualStyleBackColor = false;
@@ -185,9 +246,15 @@ namespace Inventory.App.UI
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnHome.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnHome.Location = new System.Drawing.Point(0, 140);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(180, 40);
+=======
+            this.btnHome.Location = new System.Drawing.Point(0, 121);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(154, 35);
+>>>>>>> 561f509 (feat: add stock)
             this.btnHome.TabIndex = 2;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = false;
@@ -197,18 +264,31 @@ namespace Inventory.App.UI
             // 
             this.lblWelcome.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.lblWelcome.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.lblWelcome.Location = new System.Drawing.Point(10, 100);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(160, 25);
+=======
+            this.lblWelcome.Location = new System.Drawing.Point(9, 87);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(137, 22);
+>>>>>>> 561f509 (feat: add stock)
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "Welcome SA";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picUser
             // 
+<<<<<<< HEAD
             this.picUser.Location = new System.Drawing.Point(55, 30);
             this.picUser.Name = "picUser";
             this.picUser.Size = new System.Drawing.Size(70, 60);
+=======
+            this.picUser.Image = ((System.Drawing.Image)(resources.GetObject("picUser.Image")));
+            this.picUser.Location = new System.Drawing.Point(45, 12);
+            this.picUser.Name = "picUser";
+            this.picUser.Size = new System.Drawing.Size(66, 72);
+>>>>>>> 561f509 (feat: add stock)
             this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picUser.TabIndex = 0;
             this.picUser.TabStop = false;
@@ -219,6 +299,7 @@ namespace Inventory.App.UI
             this.panelHeader.Controls.Add(this.btnClose);
             this.panelHeader.Controls.Add(this.lblTitle);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+<<<<<<< HEAD
             this.panelHeader.Location = new System.Drawing.Point(180, 0);
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1000, 40);
@@ -235,6 +316,13 @@ namespace Inventory.App.UI
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Inventory Mangement System";
             // 
+=======
+            this.panelHeader.Location = new System.Drawing.Point(154, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(857, 35);
+            this.panelHeader.TabIndex = 1;
+            // 
+>>>>>>> 561f509 (feat: add stock)
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -242,28 +330,60 @@ namespace Inventory.App.UI
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnClose.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnClose.Location = new System.Drawing.Point(950, 5);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(40, 30);
+=======
+            this.btnClose.Location = new System.Drawing.Point(814, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(34, 26);
+>>>>>>> 561f509 (feat: add stock)
             this.btnClose.TabIndex = 1;
             this.btnClose.Text = "✕";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+<<<<<<< HEAD
+=======
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(13, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(241, 21);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Inventory Mangement System";
+            // 
+>>>>>>> 561f509 (feat: add stock)
             // panelContent
             // 
             this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(216)))), ((int)(((byte)(230)))));
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+<<<<<<< HEAD
             this.panelContent.Location = new System.Drawing.Point(180, 40);
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(1000, 610);
+=======
+            this.panelContent.Location = new System.Drawing.Point(154, 35);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(857, 528);
+>>>>>>> 561f509 (feat: add stock)
             this.panelContent.TabIndex = 2;
             // 
             // MainForm
             // 
+<<<<<<< HEAD
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 650);
+=======
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1011, 563);
+>>>>>>> 561f509 (feat: add stock)
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelSidebar);
@@ -277,6 +397,10 @@ namespace Inventory.App.UI
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             this.ResumeLayout(false);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 561f509 (feat: add stock)
         }
 
         #endregion

@@ -8,15 +8,23 @@ namespace Inventory.App.UserControls
 {
     public partial class uscProduct : UserControl
     {
+<<<<<<< HEAD
         private ProductBLL proBLL;	// ប្រកាស BLL សម្រាប់ Product
         private CategoryBLL catBLL;	// ប្រកាស BLL សម្រាប់ Category
+=======
+        private ProductBLL proBLL;
+        private CategoryBLL catBLL;
+>>>>>>> 561f509 (feat: add stock)
 
         public uscProduct()
         {
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         // កូដស្របតាម 4-Layers
+=======
+>>>>>>> 561f509 (feat: add stock)
         private void LoadCategoryID()
         {
             try
@@ -28,11 +36,18 @@ namespace Inventory.App.UserControls
             }
             catch (Exception ex)
             {
+<<<<<<< HEAD
                 MessageBox.Show("មានបញ្ហាក្នុងការទាញយកប្រភេទផលិតផល៖ " + ex.Message);
             }
         }
 
         // ទទួលយក Object DatabaseUser ពី MainForm
+=======
+                MessageBox.Show("Failed to load categories: " + ex.Message);
+            }
+        }
+
+>>>>>>> 561f509 (feat: add stock)
         public void InitializeControl(DatabaseUser user)
         {
             try
@@ -44,7 +59,11 @@ namespace Inventory.App.UserControls
             }
             catch (Exception ex)
             {
+<<<<<<< HEAD
                 MessageBox.Show("បរាជ័យក្នុងការភ្ជាប់ទិន្នន័យ៖ " + ex.Message);
+=======
+                MessageBox.Show("Failed to connect data: " + ex.Message);
+>>>>>>> 561f509 (feat: add stock)
             }
         }
 
@@ -72,13 +91,21 @@ namespace Inventory.App.UserControls
                     LastUpdated = DateTime.Now
                 };
                 proBLL.AddNewProduct(newProduct);
+<<<<<<< HEAD
                 MessageBox.Show("ទិន្នន័យត្រូវបានបញ្ចូលជោគជ័យ!");
+=======
+                MessageBox.Show("Product inserted successfully!");
+>>>>>>> 561f509 (feat: add stock)
                 LoadProductData();
                 ClearText();
             }
             catch (Exception ex)
             {
+<<<<<<< HEAD
                 MessageBox.Show("មានបញ្ហា៖ " + ex.Message);
+=======
+                MessageBox.Show("Error: " + ex.Message);
+>>>>>>> 561f509 (feat: add stock)
             }
         }
 
@@ -88,7 +115,11 @@ namespace Inventory.App.UserControls
             {
                 if (string.IsNullOrWhiteSpace(txtProductID.Text))
                 {
+<<<<<<< HEAD
                     MessageBox.Show("សូមជ្រើសរើស Product ដើម្បី Update!");
+=======
+                    MessageBox.Show("Please select a Product to update!");
+>>>>>>> 561f509 (feat: add stock)
                     return;
                 }
                 var product = new Product
@@ -104,12 +135,20 @@ namespace Inventory.App.UserControls
                     LastUpdated = DateTime.Now
                 };
                 proBLL.UpdateProduct(product);
+<<<<<<< HEAD
                 MessageBox.Show("ទិន្នន័យត្រូវបានកែប្រែជោគជ័យ!");
+=======
+                MessageBox.Show("Product updated successfully!");
+>>>>>>> 561f509 (feat: add stock)
                 LoadProductData();
             }
             catch (Exception ex)
             {
+<<<<<<< HEAD
                 MessageBox.Show("មានបញ្ហា៖ " + ex.Message);
+=======
+                MessageBox.Show("Error: " + ex.Message);
+>>>>>>> 561f509 (feat: add stock)
             }
         }
 
@@ -119,6 +158,7 @@ namespace Inventory.App.UserControls
             {
                 if (string.IsNullOrWhiteSpace(txtProductID.Text))
                 {
+<<<<<<< HEAD
                     MessageBox.Show("សូមជ្រើសរើស Product ដើម្បី Delete!");
                     return;
                 }
@@ -126,13 +166,26 @@ namespace Inventory.App.UserControls
                 {
                     proBLL.DeleteProduct(txtProductID.Text.Trim());
                     MessageBox.Show("ទិន្នន័យត្រូវបានលុបជោគជ័យ!");
+=======
+                    MessageBox.Show("Please select a Product to delete!");
+                    return;
+                }
+                if (MessageBox.Show("Are you sure you want to delete this Product?", "Confirm Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    proBLL.DeleteProduct(txtProductID.Text.Trim());
+                    MessageBox.Show("Product deleted successfully!");
+>>>>>>> 561f509 (feat: add stock)
                     LoadProductData();
                     ClearText();
                 }
             }
             catch (Exception ex)
             {
+<<<<<<< HEAD
                 MessageBox.Show("មានបញ្ហា៖ " + ex.Message);
+=======
+                MessageBox.Show("Error: " + ex.Message);
+>>>>>>> 561f509 (feat: add stock)
             }
         }
 
@@ -187,5 +240,35 @@ namespace Inventory.App.UserControls
                 (p.Barcode ?? "").ToLower().Contains(keyword));
             dgvProducts.DataSource = filtered;
         }
+<<<<<<< HEAD
+=======
+
+        private void btnReporting_Click(object sender, EventArgs e)
+        {
+            if (proBLL == null) return;
+            try
+            {
+                List<Product> products = proBLL.GetProductsData();
+                int total = products.Count;
+                int lowStock = products.FindAll(p => p.QuantityInStock <= p.ReOrderLevel).Count;
+                decimal totalValue = 0;
+                foreach (var p in products)
+                    totalValue += p.UnitPrice * p.QuantityInStock;
+
+                string report =
+                    "===== Product Report =====\n\n" +
+                    "Total Products   : " + total + "\n" +
+                    "Low Stock Items  : " + lowStock + "\n" +
+                    "Total Stock Value: " + totalValue.ToString("N2") + " $\n\n" +
+                    "Generated: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+
+                MessageBox.Show(report, "Reporting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to generate report: " + ex.Message);
+            }
+        }
+>>>>>>> 561f509 (feat: add stock)
     }
 }

@@ -14,7 +14,10 @@ namespace Inventory.App.DAL
             _dbConnection = dbConnect;
         }
 
+<<<<<<< HEAD
         // ប្រើប្រាស់ List<Product> ដដែល ដើម្បីកុំឲ្យប៉ះពាល់ដល់ BLL និង UI
+=======
+>>>>>>> 561f509 (feat: add stock)
         public List<Product> GetAllProducts()
         {
             List<Product> productsList = new List<Product>();
@@ -48,6 +51,35 @@ namespace Inventory.App.DAL
             return productsList;
         }
 
+<<<<<<< HEAD
+=======
+        public List<Product> GetAllProducts_with_ProId_N_ProName()
+        {
+            List<Product> proList = new List<Product>();
+            using (SqlConnection conn = new SqlConnection(_dbConnection.GetConnectionString()))
+            {
+                string query = @"SELECT ProductID, CAST(ProductID AS nvarchar(10)) + ' - ' + ProductName AS Product_Id_Name FROM Products";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    conn.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Product p = new Product
+                            {
+                                ProductID = reader["ProductID"] != DBNull.Value ? reader["ProductID"].ToString() : "",
+                                ProductName = reader["Product_Id_Name"] != DBNull.Value ? reader["Product_Id_Name"].ToString() : ""
+                            };
+                            proList.Add(p);
+                        }
+                    }
+                }
+            }
+            return proList;
+        }
+
+>>>>>>> 561f509 (feat: add stock)
         public void InsertProduct(Product product)
         {
             using (SqlConnection conn = new SqlConnection(_dbConnection.GetConnectionString()))
@@ -56,7 +88,10 @@ namespace Inventory.App.DAL
                          (ProductID, ProductName, CategoryID, UnitPrice, QuantityInStock, Description, Barcode, ReOrderLevel, LastUpdated)
                          VALUES
                          (@ProductID, @ProductName, @CategoryID, @UnitPrice, @QuantityInStock, @Description, @Barcode, @ReOrderLevel, @LastUpdated)";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 561f509 (feat: add stock)
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@ProductID", product.ProductID ?? (object)DBNull.Value);
@@ -88,7 +123,10 @@ namespace Inventory.App.DAL
                          ReOrderLevel = @ReOrderLevel,
                          LastUpdated = @LastUpdated
                          WHERE ProductID = @ProductID";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 561f509 (feat: add stock)
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@ProductID", product.ProductID ?? (object)DBNull.Value);

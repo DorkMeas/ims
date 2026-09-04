@@ -282,6 +282,10 @@ namespace Inventory.App.UserControls
             this.btnReporting.TabIndex = 26;
             this.btnReporting.Text = "Reporting ...";
             this.btnReporting.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
+            this.btnReporting.Click += new System.EventHandler(this.btnReporting_Click);
+>>>>>>> 561f509 (feat: add stock)
             // 
             // uscProduct
             // 
